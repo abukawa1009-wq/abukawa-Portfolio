@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio | Web Designer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- ===== Header ===== -->
+      <header class="header">
+        <img class="logo" src="images/ロゴ.png" alt="ロゴ" />
+        <nav>
+          <a href="#profile">Profile</a>
+          <a href="#works">Works</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <!-- ===== Hero ===== -->
+      <section class="hero">
+        <div class="hero-inner">
+          <h1 class="title">Designing Webs Like Music.</h1>
+          <p class="subtitle">Web Designer / Frontend</p>
+          <div class="wave"></div>
+        </div>
+      </section>
+
+      <!-- ===== Set List（目次） ===== -->
+      <section class="section setlist">
+        <h2>Set List</h2>
+        <ul>
+          <li><a href="#profile">01 / Profile</a></li>
+          <li><a href="#works">02 / Works</a></li>
+          <li><a href="#skills">03 / Skills</a></li>
+          <li><a href="#contact">04 / Contact</a></li>
+        </ul>
+      </section>
+
+      <!-- ===== Profile ===== -->
+      <section class="section" id="profile">
+        <h2>Profile</h2>
+        <div class="profile">
+          <div class="prf-text">
+            <p>Name / Taichi Abukawa</p>
+            <p>Date of birth / 2005.10.09</p>
+            <p>School / 学校法人桑園学園札幌情報未来専門学校</p>
+
+            <div class="skill-list">
+              <span>Skills / </span>
+              <li>普通自動車第一種免許</li>
+              <li>Webクリエイター</li>
+              <li>Excel / Word / Power Point</li>
+            </div>
+          </div>
+          <img class="prf-img" src="images/profile.png" alt="profile" />
+        </div>
+        <p class="introduction">
+          「使いやすさと美しさ」の両立を目指し、デザインからコーディングまで日々制作に打ち込んでいます。<br />
+          変化の速いWeb業界で、最新の技術を積極的に吸収しながらスキルアップを追及しています。
+        </p>
+      </section>
+
+      <!-- ===== Works ===== -->
+      <section class="section" id="works">
+        <h2>Works</h2>
+
+        <!-- スライダーのコンテナ -->
+        <div class="swiper">
+          <!-- 必要に応じたwrapper -->
+          <div class="swiper-wrapper">
+            <!-- スライド -->
+            <div class="swiper-slide">
+              <img src="images/banner1.webp" alt="banner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/banner1.webp" alt="banner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/banner1.webp" alt="banner" />
+            </div>
+          </div>
+          <!-- 必要に応じてページネーション -->
+          <div class="swiper-pagination"></div>
+          <!-- 必要に応じてナビボタン -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- 各サイトへのURL -->
+        <div class="work-card">
+          <h3>Other Site</h3>
+          <p>cafe site / URL</p>
+          <p>design process / URL</p>
+        </div>
+      </section>
+
+      <!-- ===== Skills ===== -->
+      <section class="section" id="skills">
+        <h2>Skills</h2>
+
+        <div class="skill">
+          <span>HTML</span>
+          <div class="bar"><div class="level html"></div></div>
+        </div>
+
+        <div class="skill">
+          <span>CSS</span>
+          <div class="bar"><div class="level css"></div></div>
+        </div>
+
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="bar"><div class="level js"></div></div>
+        </div>
+
+        <div class="skill">
+          <span>illustrator</span>
+          <div class="bar"><div class="level ilr"></div></div>
+        </div>
+
+        <div class="skill">
+          <span>photoshop</span>
+          <div class="bar"><div class="level photo"></div></div>
+        </div>
+
+        <div class="skill">
+          <span>Figma</span>
+          <div class="bar"><div class="level Figma"></div></div>
+        </div>
+      </section>
+
+      <!-- ===== Contact ===== -->
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>ご連絡は以下のメールアドレスまでお願いします。</p>
+        <a class="mail" href="abukawa1009@gmail.com">abukawa1009@gmail.com</a>
+      </section>
+
+      <!-- ===== Footer ===== -->
+      <footer class="footer">
+        <p>© 2025 My Portfolio</p>
+      </footer>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
